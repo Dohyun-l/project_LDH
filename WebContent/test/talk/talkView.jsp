@@ -31,6 +31,7 @@
 	height: 700px;
 	background: linear-gradient(to bottom left, skyblue, pink);
 	overflow: scroll;
+	overflow-x: hidden;
 }
 
 [id=nick<%=nickname%>] {
@@ -41,9 +42,14 @@
 	color: #800080;
 }
 
+
+#content {
+ width: 30%;
+}
+
 .content {
 	background-color: #FFF56E;
-	width: 15%;
+	width: 20%;
 	height: auto;
 	display: inline-block;
 }
@@ -96,7 +102,7 @@
 				    }
 				});
 				
-			});			
+			});
 		}
 	}
 	
@@ -119,6 +125,21 @@
 	<div id="talkContent"></div>
 	<hr>
 	
+	
+	<!-- Search Google -->
+	<form method=get action="http://www.google.co.kr/search" target="_blank" >
+		<table bgcolor="#FFFFFF">
+			<tr>
+				<td>
+				<input type=text name=q size=25 maxlength=255 value="" />
+				<!-- 구글 검색 입력 창 -->
+				<input type=submit name=btnG value="Google 검색" />
+				<!-- 검색 버튼 -->
+				</td>
+			</tr>
+		</table>
+	</form>
+	<!-- Search Google -->
 
 </body>
 </html>
