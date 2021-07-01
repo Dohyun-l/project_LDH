@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+h1 {
+	font-family: 'Nanum Brush Script', cursive;
+	margin: 10px;
+	text-align: center;
+	text-shadow: 10px 10px 20px skyblue, -10px 10px 20px skyblue,
+				 -10px -10px 20px pink, 10px -10px 20px pink;
+	font-size: 5em;
+	color: white;
+	border-bottom-style: solid; 
+}
+
+#id_check {
+	background: linear-gradient(to bottom left, skyblue, pink);
+	background-size: 100%;
+	margin: 2em auto;
+}
+
+#fr > input {
+	font-family: 'Nanum Brush Script', cursive;
+	margin: 5px;
+	border-style: none;
+	border-bottom-style: solid;
+	font-size: 2em;
+}
+
+
+#fr {
+	font-family: 'Nanum Brush Script', cursive;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 3em;
+}
+
+#login_form table {
+	text-align: center;
+	margin: 7em auto;
+}
+
+#login_form h1 {
+	margin: 20px 0 0 50px;
+	font-size: 8em;
+	border-style: none;
+}
+
+#login_form td {
+	font-size: 2em;
+}
+
+#login_form input {
+	padding: 10px;
+	font-size: 1em;
+	margin: 5px;
+	border-style: none;
+	border-bottom-style: solid;
+}
+
+#link {
+	text-align: center;
+	font-size: 1.75em;
+	color: gray;
+	font-family: 'Nanum Brush Script', cursive;
+}
+
+#link a {
+	color: gray;
+	text-decoration: none;
+}

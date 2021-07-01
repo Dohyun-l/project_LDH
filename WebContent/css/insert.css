@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+.qInfo {
+	font-family: 'Nanum Brush Script', cursive;
+	border-style: none;
+	font-size: 1em;
+}
+
+.qInfo:HOVER {
+	font-size: 1.0em;
+}
+
+#insertTable {
+	font-family: 'Nanum Brush Script', cursive;
+	box-shadow: 10px 10px 20px skyblue, -10px 10px 20px skyblue,
+				 -10px -10px 20px pink, 10px -10px 20px pink;
+	width: 800px;
+	padding: 30px;
+	margin: 5em auto;
+	font-size: 1.75em;
+}
+
+#insertTable input {
+	margin: 5px;
+	border-style: none;
+	border-bottom-style: solid;
+}
+

@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+#mainHeader {
+	font-family: 'Dancing Script', cursive;
+	margin: 10px;
+	text-align: center;
+	text-shadow: 10px 10px 20px skyblue, -10px 10px 20px skyblue,
+				 -10px -10px 20px pink, 10px -10px 20px pink;
+	font-size: 5em;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar{
+	overflow: hidden;
+	background: linear-gradient(to bottom left, skyblue, pink);
+}
+
+#navbar ul {
+	margin: 0;
+  	padding: 0;
+	list-style-type: none;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 1.75em;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li a:hover {
+  /* background-color: skyblue; */
+  background: linear-gradient(skyblue 50%, pink);
+  font-size: 2em;
+}
+
+.userInfo{
+	color: gray;
+	float: right;
+}
+
+.userInfo a {
+	text-decoration: none;
+	color: gray;
+	padding: 0 20px;
+}

@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+
+.board {
+	margin: 60px auto;
+	width: 90%;
+	color: black;
+	text-align: center;
+	border-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.board .bhead {
+	font-size: 1.2em;
+}
+
+.board th {
+	color: black; 
+	border-style: none;
+	border-bottom-style: solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom-width: 1px;
+}
+
+.board td {
+	border-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: 3.0em;
+}
+
+.board .bnum {
+	width: 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+.board .bname {
+	width: 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+.board .bdate {
+	width: 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+.board .bread {
+	width: 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+.board .bsub {
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+.board>td>.bsub {
+	text-align: left;
+}
+
+.board input {
+	font-size: 1.5em;
+	border-style: none;
+}
+
+.insertButton {
+	margin: 10px 5% 10px 0;
+	border-style: none;
+	border-bottom-style: solid;
+	float: right;
+	display: inline;
+}
+
+#noticePage {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#qnaPage {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#itemPage {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#changePageSize {
+	float: right;
+	margin-top: 20px;
+	margin-right: 100px;
+	border-style: none;
+	font-size: 1em;
+	border-bottom-style: solid;
+}
+
+.cartField {
+	width: 80%;
+    margin: 0 auto;
+    font-size: 2em;
+}
+.cart {
+	font-size: 0.5em;
+}
+
+.itemInfo {
+	width: 55%;
+}
+
+.itemDate {
+	width: 15%;
+}
+
+.itemPrice {
+	width: 10%;
+}
+
+.itemQty {
+	width: 10%;
+}
+
+.itemName {
+	width: 15%;
+}
+
+.itemAddr {
+	width: 40%;
+}
+
+.itemTel {
+	width: 20%;
+}
+
+.itemEmail {
+	width: 15%;
+}
+
+.itemSum {
+	width: 10%;
+}
+
+.itemUserName {
+	width: 10%;
+}
+
+td[id*="sub"]{
+	cursor: pointer;
+}

@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+main {
+	border-style: solid;
+	margin: 20px auto;
+	width: 70%;
+	text-align: center;
+}
+
+.item {
+	vertical-align: top;
+	border-style: solid;
+	width: 200px;
+	height: 300px;
+	cursor: pointer;
+	display: none;
+	margin: 10px;
+	font-size: 0.8em;
+}
+
+.item img {
+	width: 200px;
+}
+
+#showItem {
+	display: inline-block;
+	width: 40%;
+	box-sizing: border-box;
+}
+
+#itemInfo {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	box-sizing: border-box;
+	margin: 30px 0;
+}
+
+#itemInfo table {
+	width: 100%;
+	margin-bottom: 30px
+}
+
+#itemInfo input {
+	border-style: none;
+	text-align: center;
+}
+
+
+#readcount {
+	float: right;
+	margin-top: 5px;
+	margin-right: 5%;
+}
+
+.imgLayout {
+	box-sizing: border-box;
+	margin: 0;
+	width: 200px;
+	height: 235px;
+}
+
+#img_size input{
+	width: 50px;
+}
