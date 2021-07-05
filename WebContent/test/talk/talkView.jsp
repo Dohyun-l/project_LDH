@@ -29,9 +29,14 @@
 	padding: 0 3%;
 	width: 70%;
 	height: 700px;
-	background: linear-gradient(to bottom left, skyblue, pink);
+/* 	background: linear-gradient(to bottom left, skyblue, pink); */
+ 	background-image: url('back.jpg');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 	overflow: scroll;
 	overflow-x: hidden;
+	font-size: 1.2em;
 }
 
 [id=nick<%=nickname%>] {
@@ -52,6 +57,10 @@
 	width: 20%;
 	height: auto;
 	display: inline-block;
+}
+
+#googleSearch {
+	float: right;
 }
 
 </style>
@@ -83,7 +92,7 @@
 			    	$("#talkContent").scrollTop(100000);
 			    }
 			});
-         }, 5000);
+         }, 3000);
         
 	});
 	
@@ -116,18 +125,22 @@
 
 	<h1><%=idx%> 채팅방</h1>
 	<h2><%=tdto.getTitle() %></h2>
-	<a href="talkList.jsp">채팅방 리스트 보기</a>
+	<a href="talkList.jsp">채팅방 리스트 보기</a><br>
 	닉네임 : <input type="text" id="nickname" value="<%=nickname%>" readonly>
 	내용 : <input type="text" id="content" onkeyup="enterKey()">
-	<input type="button" value="전송" onclick="writeContent()">
-
+	<input type="button" value="전송" onclick="writeContent()"><br>
+	<div>
+		링크 거는 법 : &lt;a href="링크주소" target="_blank"&gt;(페이지명)&lt;/a&gt;
+	</div>
 	<hr>
-	<div id="talkContent"></div>
+	<div id="talkContent" style="width: 50%; float: left;"></div>
+	<iframe src="game/index.html" width="40%" height="700px"></iframe>
+	
 	<hr>
 	
 	
 	<!-- Search Google -->
-	<form method=get action="http://www.google.co.kr/search" target="_blank" >
+	<form method=get action="http://www.google.co.kr/search" target="_blank" id="googleSearch" >
 		<table bgcolor="#FFFFFF">
 			<tr>
 				<td>
@@ -140,6 +153,7 @@
 		</table>
 	</form>
 	<!-- Search Google -->
-
+	
+	
 </body>
 </html>
